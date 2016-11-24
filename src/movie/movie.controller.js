@@ -12,8 +12,7 @@ function MovieController ($scope,$stateParams,$http,$sce){
             autoPlay : true
     			};
     }
-
-     console.log('the video data',$scope.config);
+    
      }).then(function(error){
      console.log(error);
     });
