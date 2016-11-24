@@ -1,0 +1,265 @@
+<div id="comedy" layout="column">
+    <div style="margin-left:20px;">
+        <h3 style="color:#9E9E9E">
+          Comedy
+         </h3>
+    </div>
+    <md-divider style="margin-left:20px; margin:right:10px; background-color:#9E9E9E"></md-divider>
+    <div layout="row " class="video-band" flex>
+        <div ng-scrollable style="width:70%">
+            <div style="display:-webkit-box; -webkit-box-orient:horizontal; margin-top:10px">
+                <div style="height:180px; width:220px; display:-webkit-box; webkit-box-orient-horizontal; background-color:#607D8B; margin-left:20px;" ng-repeat="item in comedy track by $index">
+                    <div style="background-image:url({{item.imgUri}}); height:100%; width:115px;">
+                    </div>
+                    <div layout="column" layout-padding>
+                        <div layout="column" style="margin-top:14px;">
+                            <md-button ng-click="watchTrailer(item.trailer,item.genre)" class="md-fab" style="background-color:#9E9E9E">
+                                <md-tooltip>
+                                    Watch trailer
+                                </md-tooltip>
+                                <div value="gallery" style="height:40px; width:34px; background-image:url({{trailerBtnIcon}}); margin-left:4px;"></div>
+                            </md-button>
+                            <md-button ui-sref="movie" class="md-fab" style="background-color:#9E9E9E">
+                                <md-tooltip>
+                                    Play Movie
+                                </md-tooltip>
+                                <div value="gallery" style="height:40px; width:34px; background-image:url({{playButtonIcon}}); margin-left:4px; margin-top:6px;"></div>
+                            </md-button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div style="width:30%;" flex>
+            <md-card style="height:200px; background:black;">
+                <iframe value="comedy" style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen></iframe>
+
+            </md-card>
+        </div>
+    </div>
+
+</div>
+<!-- drama section -->
+<div id="drama" layout="column">
+    <div style="margin-left:20px;">
+        <h3 style="color:#9E9E9E">
+      Drama
+     </h3>
+    </div>
+    <md-divider style="margin-left:20px; margin:right:10px; background-color:#9E9E9E"></md-divider>
+    <div layout="row " class="video-band" flex>
+        <div ng-scrollable style="width:70%">
+            <div style="display:-webkit-box; -webkit-box-orient:horizontal; margin-top:10px">
+                <div style="height:180px; width:220px; display:-webkit-box; webkit-box-orient-horizontal; background-color:#607D8B; margin-left:20px;" ng-repeat="item in drama track by $index">
+                    <div style="background-image:url({{item.imgUri}}); height:100%; width:115px;">
+                    </div>
+                    <div layout="column" layout-padding>
+                        <div layout="column" style="margin-top:14px;">
+                            <md-button ng-click="watchTrailer(item.trailer,item.genre)" class="md-fab" style="background-color:#9E9E9E">
+                                <md-tooltip>
+                                    Watch trailer
+                                </md-tooltip>
+                                <div value="gallery" style="height:40px; width:34px; background-image:url({{trailerBtnIcon}}); margin-left:4px;"></div>
+                            </md-button>
+                            <md-button ui-sref="movie" class="md-fab" style="background-color:#9E9E9E">
+                                <md-tooltip>
+                                    Play Movie
+                                </md-tooltip>
+                                <div value="gallery" style="height:40px; width:34px; background-image:url({{playButtonIcon}}); margin-left:4px;"></div>
+                            </md-button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div style="width:30%;" flex>
+            <md-card style="height:200px; background:black;">
+                <iframe style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen></iframe>
+            </md-card>
+        </div>
+    </div>
+
+</div>
+<!-- fantasy section -->
+<div id="fantasy" layout="column">
+    <div style="margin-left:20px;">
+        <h3 style="color:#9E9E9E">
+      Fantsay
+     </h3>
+    </div>
+    <md-divider style="margin-left:20px; margin:right:10px; background-color:#9E9E9E"></md-divider>
+    <div layout="row " class="video-band" flex>
+        <div ng-scrollable style="width:70%">
+            <div style="display:-webkit-box; -webkit-box-orient:horizontal; margin-top:10px">
+                <div style="height:180px; width:220px; display:-webkit-box; webkit-box-orient-horizontal; background-color:#607D8B; margin-left:20px;" ng-repeat="item in fantasy track by $index">
+                    <div style="background-image:url({{item.imgUri}}); height:100%; width:115px;">
+                    </div>
+                    <div layout="column" layout-padding>
+                        <div layout="column" style="margin-top:14px;">
+                            <md-button ng-click="watchTrailer(item.trailer,item.genre)" class="md-fab" style="background-color:#9E9E9E">
+                                <md-tooltip>
+                                    Watch trailer
+                                </md-tooltip>
+                                <div value="gallery" style="height:40px; width:34px; background-image:url({{trailerBtnIcon}}); margin-left:4px;"></div>
+                            </md-button>
+                            <md-button ui-sref="movie" class="md-fab" style="background-color:#9E9E9E">
+                                <md-tooltip>
+                                    Play Movie
+                                </md-tooltip>
+                                <div value="gallery" style="height:40px; width:34px; background-image:url({{playButtonIcon}}); margin-left:4px; margin-top:6px;"></div>
+                            </md-button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div style="width:30%;" flex>
+
+            <md-card style="height:200px; background:black;">
+                <iframe style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen></iframe>
+            </md-card>
+        </div>
+    </div>
+
+</div>
+<!-- horror section -->
+<div id="horror" layout="column">
+    <div style="margin-left:20px;">
+        <h3 style="color:#9E9E9E">
+      Horror
+     </h3>
+    </div>
+    <md-divider style="margin-left:20px; margin:right:10px; background-color:#9E9E9E"></md-divider>
+    <div layout="row " class="video-band" flex>
+        <div ng-scrollable style="width:70%">
+            <div style="display:-webkit-box; -webkit-box-orient:horizontal; margin-top:10px">
+                <div style="height:180px; width:220px; display:-webkit-box; webkit-box-orient-horizontal; background-color:#607D8B; margin-left:20px;" ng-repeat="item in horror track by $index">
+                    <div style="background-image:url({{item.imgUri}}); height:100%; width:115px;">
+                    </div>
+                    <div layout="column" layout-padding>
+                        <div layout="column" style="margin-top:14px;">
+                            <md-button ng-click="watchTrailer(item.trailer,item.genre)" class="md-fab" style="background-color:#9E9E9E">
+                                <md-tooltip>
+                                    Watch trailer
+                                </md-tooltip>
+                                <div value="gallery" style="height:40px; width:34px; background-image:url({{trailerBtnIcon}}); margin-left:4px;"></div>
+                            </md-button>
+                            <md-button ui-sref="movie" class="md-fab" style="background-color:#9E9E9E">
+                                <md-tooltip>
+                                    Play Movie
+                                </md-tooltip>
+                                <div value="gallery" style="height:40px; width:34px; background-image:url({{playButtonIcon}}); margin-left:4px; margin-top:6px;"></div>
+                            </md-button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div style="width:30%;" flex>
+            <md-card style="height:200px; background:black;">
+                <iframe style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen></iframe>
+            </md-card>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- romantic section -->
+<div id="romantic" layout="column">
+    <div style="margin-left:20px;">
+        <h3 style="color:#9E9E9E">
+          Romantic
+         </h3>
+    </div>
+    <md-divider style="margin-left:20px; margin:right:10px; background-color:#9E9E9E"></md-divider>
+    <div layout="row " class="video-band" flex>
+        <div ng-scrollable style="width:70%">
+            <div style="display:-webkit-box; -webkit-box-orient:horizontal; margin-top:10px">
+                <div style="height:180px; width:220px; display:-webkit-box; webkit-box-orient-horizontal; background-color:#607D8B; margin-left:20px;" ng-repeat="item in romantic track by $index">
+                    <div style="background-image:url({{item.imgUri}}); height:100%; width:115px;">
+                    </div>
+                    <div layout="column" layout-padding>
+                        <div layout="column" style="margin-top:14px;">
+                            <md-button ng-click="watchTrailer(item.trailer,item.genre)" class="md-fab" style="background-color:#9E9E9E">
+                                <md-tooltip>
+                                    Watch trailer
+                                </md-tooltip>
+                                <div value="gallery" style="height:40px; width:34px; background-image:url({{trailerBtnIcon}}); margin-left:4px;"></div>
+                            </md-button>
+                            <md-button ui-sref="movie" class="md-fab" style="background-color:#9E9E9E">
+                                <md-tooltip>
+                                    Play Movie
+                                </md-tooltip>
+                                <div value="gallery" style="height:40px; width:34px; background-image:url({{playButtonIcon}}); margin-left:4px; margin-top:6px;"></div>
+                            </md-button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div style="width:30%;" flex>
+            <md-card style="height:200px; background:black;">
+                <iframe style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen></iframe>
+            </md-card>
+        </div>
+    </div>
+
+</div>
+<!-- sc-fi section -->
+<div id="sciFi" layout="column">
+    <div style="margin-left:20px;">
+        <h3 style="color:#9E9E9E">
+          Sc-Fi
+        </h3>
+    </div>
+    <md-divider style="margin-left:20px; margin:right:10px; background-color:#9E9E9E"></md-divider>
+    <div layout="row " class="video-band" flex>
+        <div ng-scrollable style="width:70%">
+            <div style="display:-webkit-box; -webkit-box-orient:horizontal; margin-top:10px">
+                <div style="height:180px; width:220px; display:-webkit-box; webkit-box-orient-horizontal; background-color:#607D8B; margin-left:20px;" ng-repeat="item in sciFi track by $index">
+                    <div style="background-image:url({{item.imgUri}}); height:100%; width:115px;">
+                    </div>
+                    <div layout="column" layout-padding>
+                        <div layout="column" style="margin-top:14px;">
+                            <md-button value={{item.genre}} ng-click="watchTrailer(item.trailer,item.genre)" class="md-fab" style="background-color:#9E9E9E">
+                                <md-tooltip>
+                                    Watch trailer
+                                </md-tooltip>
+                                <div value={{item.genre}} style="height:40px; width:34px; background-image:url({{trailerBtnIcon}}); margin-left:4px;"></div>
+                            </md-button>
+                            <md-button ui-sref="movie" class="md-fab" style="background-color:#9E9E9E">
+                                <md-tooltip>
+                                    Play Movie
+                                </md-tooltip>
+                                <div value={{item.genre}} style="height:40px; width:34px; background-image:url({{playButtonIcon}}); margin-left:4px; margin-top:6px;"></div>
+                            </md-button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div style="width:30%;" flex>
+            <md-card style="height:200px; background:black;">
+                <iframe value="sci-fi" style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen></iframe>
+            </md-card>
+        </div>
+    </div>
+</div>

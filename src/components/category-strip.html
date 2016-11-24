@@ -1,0 +1,39 @@
+<div layout="row " class="video-band " flex>
+    <div ng-scrollable style="width:70%">
+        <div layout="row" flex>
+            <md-card style="opacity: 0.2; background:black " class="video-card " ng-repeat="item in titles track by $index " md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }} " md-theme-watch>
+                <md-card-title class="pdco-content opaque ">
+                    <md-card-title-text>
+                        <span class="md-headline ">Card with image</span>
+                        <span class="md-subhead">{{item}}</span>
+                    </md-card-title-text>
+                    <md-card-title-media>
+                        <div class="md-media-lg card-media "></div>
+                    </md-card-title-media>
+                </md-card-title>
+                <md-card-actions class="pdco-content opaque " style="color:white " layout="row " layout-align="end center">
+                    <md-button>Watch</md-button>
+                    <md-button>Action 2</md-button>
+                </md-card-actions>
+            </md-card>
+        </div>
+    </div>
+    <div style="width:3x0%;" flex>
+
+        <md-card style="height:200px; background:black; opacity: 0.1; ">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline ">Card with image</span>
+                    <span class="md-subhead ">Fuck</span>
+                </md-card-title-text>
+                <md-card-title-media>
+                    <div class="md-media-lg card-media "></div>
+                </md-card-title-media>
+            </md-card-title>
+            <md-card-actions layout="row " layout-align="end center ">
+                <md-button>hello</md-button>
+                <md-button>Action 2</md-button>
+            </md-card-actions>
+        </md-card>
+    </div>
+</div>

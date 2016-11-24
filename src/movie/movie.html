@@ -1,0 +1,28 @@
+<div layout="column" style="background-color:black;">
+    <md-progress-linear ng-if="!mediaLoaded"></md-progress-linear>
+    <videogular ng-if="mediaLoaded" vg-auto-play="config.autoPlay" style="height:675px; width:100%;">
+
+        <vg-media vg-src="config.sources">
+        </vg-media>
+
+        <vg-controls>
+            <vg-play-pause-button>
+                <md-tooltip>
+                    play
+                </md-tooltip>
+            </vg-play-pause-button>
+            <vg-time-display>{{ currentTime | date:'mm:ss':'+0000'}}</vg-time-display>
+            <vg-scrub-bar>
+                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+            </vg-scrub-bar>
+            <vg-time-display>{{ totalTime | date:'h:mm:ss':'UTC' }}</vg-time-display>
+            <vg-volume>
+                <vg-mute-button></vg-mute-button>
+                <vg-volume-bar></vg-volume-bar>
+            </vg-volume>
+            <vg-fullscreen-button></vg-fullscreen-button>
+        </vg-controls>
+
+        <vg-overlay-play></vg-overlay-play>
+    </videogular>
+</div>

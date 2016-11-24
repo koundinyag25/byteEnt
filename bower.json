@@ -1,0 +1,21 @@
+{
+  "name": "byte-ent",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "koundinya"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngScrollable": "ng-scrollable#^0.2.5"
+  }
+}

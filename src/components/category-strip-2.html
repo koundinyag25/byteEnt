@@ -1,0 +1,54 @@
+<div layout="column">
+    <div style="margin-left:20px;">
+        <h3>
+             Drama
+           </h3>
+    </div>
+    <md-divider style="margin-left:20px; margin:right:10px"></md-divider>
+    <div layout="row " class="video-band" flex>
+        <div ng-scrollable style="width:70%">
+            <div style="display:-webkit-box; -webkit-box-orient:horizontal; margin-top:10px">
+                <div style="height:180px; width:220px; display:-webkit-box; webkit-box-orient-horizontal; background-color:#003a7e; margin-left:20px;" ng-repeat="item in titles[0] track by $index">
+                    <div style="background-image:url({{item.imgUri}}); height:100%; width:115px;">
+                    </div>
+                    <div layout="column" layout-padding>
+                        <div layout="column" style="margin-top:14px;">
+                            <md-button class="md-fab" style="background-color:#9E9E9E">
+                                <md-tooltip>
+                                    Watch trailer
+                                </md-tooltip>
+                                <div value="gallery" style="height:40px; width:34px; background-image:url({{trailerBtnIcon}}); margin-left:4px;"></div>
+                            </md-button>
+                            <md-button class="md-fab" style="background-color:#009688">
+                                <md-tooltip>
+                                    Play Movie
+                                </md-tooltip>
+                                <div value="gallery" style="height:40px; width:34px; background-image:url({{playButtonIcon}}); margin-left:4px;"></div>
+                            </md-button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div style="width:30%;" flex>
+
+            <md-card style="height:200px; background:black;">
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline ">Card with image</span>
+                        <span class="md-subhead ">Fuck</span>
+                    </md-card-title-text>
+                    <md-card-title-media>
+                        <div class="md-media-lg card-media "></div>
+                    </md-card-title-media>
+                </md-card-title>
+                <md-card-actions layout="row " layout-align="end center ">
+                    <md-button>hello</md-button>
+                    <md-button>Action 2</md-button>
+                </md-card-actions>
+            </md-card>
+        </div>
+    </div>
