@@ -116,3 +116,8 @@ body {
    cursor:pointer;
    z-index: -100;
 }
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
