@@ -80,8 +80,9 @@
 "trailer":"5AwUdTIbA8I",
 "genre":"action",
 "imgUri":"/thumbnails/action/sucideSquad.jpeg",
-"magnetUri":""
-},{
+"magnetUri":"?xt=urn:btih:d84ac81cb6bb3ae055aca1a75b4ddeb30f00e38b&dn"
+},
+{
 "title":"X-men apocolypse",
 "trailer":"COvnHv42T-A",
 "genre":"action",
@@ -98,42 +99,42 @@
 "trailer":"PsD0NpFSADM",
 "genre":"romantic",
 "imgUri":"/thumbnails/romantic/500DaysOfSummer.jpeg",
-"magnetUri":""
+"magnetUri":"?xt=urn:btih:e08f0d17a4c32325c74e5e604e87b5ea3ae7b956&dn"
 },
 {
 "title":"a walk to remember",
 "trailer":"EgdoQ8Oxu2E",
 "genre":"romantic",
 "imgUri":"/thumbnails/romantic/aWalkToRemember.jpeg",
-"magnetUri":""
+"magnetUri":"?xt=urn:btih:5f19f9875794114ae4241e4929f4542a388f6e52&dn"
 },
 {
-  "title":"How To Lose A Guy In 10 Days",
+"title":"How To Lose A Guy In 10 Days",
 "trailer":"2ZMGk_Ml1fc",
 "genre":"romantic",
 "imgUri":"/thumbnails/romantic/HowToLoseAGuyIn10Days.jpeg",
-"magnetUri":""
+"magnetUri":"?xt=urn:btih:b567dd5f2ddb8dc9da6a3c7d544daf854482c737&dn"
 },
 {
 "title":"The Notebook",
 "trailer":"4M7LIcH8C9U",
 "genre":"romantic",
 "imgUri":"/thumbnails/romantic/notebook.jpeg",
-"magnetUri":""
+"magnetUri":"?xt=urn:btih:868e7f9c148fb8c70eb9e065ac29c265eaa73b6c&dn"
 }
 ,{
   "title":"The Princess Bride",
 "trailer":"GNvy61LOqY0",
 "genre":"romantic",
 "imgUri":"/thumbnails/romantic/thePrincessBride.jpeg",
-"magnetUri":""
+"magnetUri":"?xt=urn:btih:cd4bebd0d6bd53f22d7d12de1d5484d33097b503&dn"
 }
 ,{
   "title":"Titanic",
 "trailer":"zCy5WQ9S4c0",
 "genre":"romantic",
 "imgUri":"/thumbnails/romantic/titanic.jpeg",
-"magnetUri":""
+"magnetUri":"?xt=urn:btih:720eab27f548a17a9bf1d6c9f5d7e9ac56cfdc43&dn"
 },
 {
   "title":"21 Jump Street",
@@ -209,13 +210,13 @@
   "trailer":"07s-cNFffDM",
   "genre":"comedy",
   "imgUri":"/thumbnails/comedy/warmBodies.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:085fa96f98cfb8ce5755b6a3ea30e5c47295d150&dn"
 },{
   "title":"12 years a slave",
   "trailer":"z02Ie8wKKRg",
   "genre":"drama",
   "imgUri":"/thumbnails/drama/12YearsASlave.jpeg",
-  "magnetUri":"?xt=urn:btih:085fa96f98cfb8ce5755b6a3ea30e5c47295d150&dn"
+  "magnetUri":"?xt=urn:btih:4adc19f35034a29a4a284fb7ef971f9684349ecd&dn"
 },{
   "title":"A Beautiful Mind",
   "trailer":"YWwAOutgWBQ",
@@ -239,127 +240,121 @@
   "trailer":"bLvqoHBptjg",
   "genre":"drama",
   "imgUri":"/thumbnails/drama/forrestGump.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:9bfb78f3cdd5e7cfc3fd2a5cdddb1e86da43d345&dn"
 },{
   "title":"Good Will hunting",
   "trailer":"PaZVjZEFkRs",
   "genre":"drama",
   "imgUri":"/thumbnails/drama/goodWillHunting.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:2f363b5d53f667fbea584206dfe0467c57038799&dn"
 },{
   "title":"Requiem For A Dream",
   "trailer":"jzk-lmU4KZ4",
   "genre":"drama",
   "imgUri":"/thumbnails/drama/requiemForADream.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:118ae264f2239197f3e84c8ba292b01341de264e&dn"
 },{
   "title":"Saving Private Ryan",
   "trailer":"RYExstiQlLc",
   "genre":"drama",
   "imgUri":"/thumbnails/drama/savingPrivateRyan.jpeg",
-  "magnetUri":""
-},{
-  "title":"Schindler's List",
-  "trailer":"JdRGC-w9syA",
-  "genre":"drama",
-  "imgUri":"/thumbnails/drama/schindlersList.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:5ca731dc25394bf7674615aecdffcaedba959d25&dn"
 },{
   "title":"Taxi Driver",
   "trailer":"UUxD4-dEzn0",
   "genre":"drama",
   "imgUri":"/thumbnails/drama/taxiDriver.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:2f24d4276c0cf6b59fccb156eb478f873979232e&dn"
 },{
   "title":"The Departed",
   "trailer":"iojhqm0JTW4",
   "genre":"drama",
   "imgUri":"/thumbnails/drama/theDeparted.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:bdda91484df336183f544f5f261e682657b0abaf&dn"
 },{
   "title":"The Green Mile",
   "trailer":"ctRK-4Vt7dA",
   "genre":"drama",
   "imgUri":"/thumbnails/drama/theGreenMile.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:82d34e330ec575e6523bb5bc1ae1e95184ba88bc&dn"
 },{
   "title":"The Pianist",
   "trailer":"CIRLLPa-j9o",
   "genre":"drama",
   "imgUri":"/thumbnails/drama/thePianist.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:5b35b2c94b288dd9f8970a38410975467bf662ee&dn"
 },{
   "title":"The Pursuit Of Happyness",
   "trailer":"89Kq8SDyvfg",
   "genre":"drama",
   "imgUri":"/thumbnails/drama/thePursuitOfHappyness.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:684bba18724f3516a2c71908a9c395419ef58a5d&dn"
 },{
   "title":"The Shawshank Redemption",
   "trailer":"NmzuHjWmXOc",
   "genre":"drama",
   "imgUri":"/thumbnails/drama/theShawshankRedemption.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:ac418db33fa5cea4fab11bc58008fe08f291c9be&dn"
 },{
   "title":"avatar",
-  "trailer":"",
+  "trailer":"5PSNL1qE6VY ",
   "genre":"sci-fi",
   "imgUri":"/thumbnails/sci-fi/avatar.jpeg",
-  "magnetUri":"5PSNL1qE6VY"
+  "magnetUri":"?xt=urn:btih:1fa82d9959257afc7d849d7b014bdd2f76bd2c05&dn"
 },{
   "title":"Cloverfield",
   "trailer":"",
   "genre":"sci-fi",
   "imgUri":"/thumbnails/sci-fi/cloverfield.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:5da1359f73575385ef0105887a1a2a4c491dd1f0&dn"
 },{
   "title":"District 9",
   "trailer":"",
   "genre":"sci-fi",
   "imgUri":"/thumbnails/sci-fi/district9.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:eb345737e399bab20b0cc0aff8663b01be3f122d&dn"
 },{
   "title":"Edge Of Tomorrow",
-  "trailer":"",
+  "trailer":"?xt=urn:btih:5a37b321fd63828f2b304961cc151a1c696aee3e&dn",
   "genre":"sci-fi",
   "imgUri":"/thumbnails/sci-fi/edgeOfTomorrow.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:5a37b321fd63828f2b304961cc151a1c696aee3e&dn"
 },{
   "title":"Gravity",
   "trailer":"",
   "genre":"sci-fi",
   "imgUri":"/thumbnails/sci-fi/gravity.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:80fe9c2a368afb173812cb3ddd8f1bfac86b762d&dn"
 },{
   "title":"Inception",
   "trailer":"",
   "genre":"sci-fi",
   "imgUri":"/thumbnails/sci-fi/inception.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:224bf45881252643dfc2e71abc7b2660a21c68c4&dn"
 },{
   "title":"Interstellar",
   "trailer":"",
   "genre":"sci-fi",
   "imgUri":"/thumbnails/sci-fi/interstellar.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:4aa34f8f0c05600f166a37a16995dd553072d1e7&dn"
 },{
   "title":"Mad Max:Road Fury",
   "trailer":"",
   "genre":"sci-fi",
   "imgUri":"/thumbnails/sci-fi/madMaxRoadFury.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:13241fe16a2797b2a41b7822bde970274d6b687c&dn"
 },{
   "title":"Minority Report",
   "trailer":"",
   "genre":"sci-fi",
   "imgUri":"/thumbnails/sci-fi/minorityReport.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:2d4ac74b5888a7625528bea3f16f78c22776839f&dn"
 },{
   "title":"Moon",
   "trailer":"",
   "genre":"sci-fi",
   "imgUri":"/thumbnails/sci-fi/moon.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:24d340b6ca51a47714c34b204982ab12892a8c34&dn"
 },{
   "title":"Neighbors",
   "trailer":"",
@@ -371,211 +366,190 @@
   "trailer":"",
   "genre":"sci-fi",
   "imgUri":"/thumbnails/sci-fi/sunshine.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:566b1190c670f3c305de6f65fe8f24f5b8e1f5a3&dn"
 },{
   "title":"Terminator 2",
   "trailer":"",
   "genre":"sci-fi",
   "imgUri":"/thumbnails/sci-fi/terminator2.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:7a0e02e22744ddb807480f580cc328925d5810d4&dn"
 },{
   "title":"The Martian",
   "trailer":"",
   "genre":"sci-fi",
   "imgUri":"/thumbnails/sci-fi/theMartian.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:0eff4a129d185f91e28ae61cfaa2a4d2f5c6e429&dn"
 },{
   "title":"The Matrix",
   "trailer":"",
   "genre":"sci-fi",
   "imgUri":"/thumbnails/sci-fi/theMatrix.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:20130aa512be804b52c6d751dfa7070e308037ce&dn"
 },{
   "title":"Aice In Wonderland",
   "trailer":"",
   "genre":"fantasy",
   "imgUri":"/thumbnails/fantasy/AliceInWonderland.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:13022e120aa5667551829c51d770f4b7e808c965&dn"
+},{
+  "title": "fantastic beasts and where to find them",
+  "trialer":"",
+  "genre":"fantasy",
+  "imgUri":"thumbnails/fantasy/fantastic_beasts.jpeg",
+  "magnetUri":"?xt=urn:btih:722a7442a3f75fde9c6d01c11875a5a3398fd097&dn"
 },
 {
   "title":"Charlie And The Chocolate Factory",
   "trailer":"",
   "genre":"fantasy",
   "imgUri":"/thumbnails/fantasy/CharlieAndTheChocolateFactory.jpeg",
-  "magnetUri":""
-},
-{
-  "title":"Cindrella",
-  "trailer":"",
-  "genre":"fantasy",
-  "imgUri":"/thumbnails/fantasy/Cinderella.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:3fb0c1d2cf425a83bdbc5fb3e6b91932455a2f3b&dn"
 },
 {
   "title":"Into The Woods",
   "trailer":"",
   "genre":"fantasy",
   "imgUri":"/thumbnails/fantasy/IntoTheWoods.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:4e660f05ad95f61950985c3a6702ae605e41b649&dn"
 },
 {
   "title":"Jumanji",
   "trailer":"",
   "genre":"fantasy",
   "imgUri":"/thumbnails/fantasy/Jumanji.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:1f79699e6238306032155285ba20503649ea3cc8&dn"
 },
 {
   "title":"Maleficent",
   "trailer":"",
   "genre":"fantasy",
   "imgUri":"/thumbnails/fantasy/Maleficent.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:1a097cc231756ae06c3a2bc1e39780765d5fbaf3&dn"
 },
 {
   "title":"Night At The Museum",
   "trailer":"",
   "genre":"fantasy",
   "imgUri":"/thumbnails/fantasy/NightAtTheMuseum.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:c012a4bd239e798a2bbac3a80bd1cba1da26bbe2&dn"
 },
 {
   "title":"Pan",
   "trailer":"",
   "genre":"fantasy",
   "imgUri":"/thumbnails/fantasy/Pan.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:9cce08ee19845fb884f495f5d09019320467e032&dn"
 },
-{
-  "title":"Pan's Labyrinth",
-  "trailer":"",
-  "genre":"fantasy",
-  "imgUri":"/thumbnails/fantasy/Pan'sLabyrinth.jpeg",
-  "magnetUri":""
-},
+
 {
   "title":"Prince Of Persia: The Sands Of Time",
   "trailer":"",
   "genre":"fantasy",
   "imgUri":"/thumbnails/fantasy/PrinceOfPersiaTheSandsOfTime.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:6cbad769743e3d5d9da25a0a0e87e0f777fd23ed&dn"
 },
 {
-  "title":"Ted",
+  "title":"Ted 2",
   "trailer":"",
-  "genre":"fantasy",
-  "imgUri":"/thumbnails/fantasy/Ted.jpeg",
-  "magnetUri":""
+  "genre":"comedy",
+  "imgUri":"/thumbnails/comedy/ted2.jpeg",
+  "magnetUri":"?xt=urn:btih:d1c1a7ec4f83adeecc70d698ca27f4762f11f2f5&dn"
 },{
   "title":"The BFG",
   "trailer":"",
   "genre":"fantasy",
   "imgUri":"/thumbnails/fantasy/TheBFG.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:30dad04c193dc52050bf5473d94562ce93815e2b&dn"
 },
 {
   "title":"The Golden Compass",
   "trailer":"",
   "genre":"fantasy",
   "imgUri":"/thumbnails/fantasy/TheGoldenCompass.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:ca998dffc1cac7792097fbb40929d8e5d895bc95&dn"
 },
 {
-  "title":"The Hobbit",
+  "title":"The Hobbit: An Unexpected Journey",
   "trailer":"",
   "genre":"fantasy",
   "imgUri":"/thumbnails/fantasy/TheHobbit.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:0671b1402f497b71867ab54b5a404dc91a20047e&dn"
 },
 {
   "title":"The Mummy",
   "trailer":"",
   "genre":"fantasy",
   "imgUri":"/thumbnails/fantasy/TheMummy.jpeg",
-  "magnetUri":""
-},
-{
-  "title":"Amityville:The Awakening",
-  "trailer":"",
-  "genre":"horror",
-  "imgUri":"/thumbnails/horror/amityville.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:54698299f78795dae4d064eedad7194a45ad96e5&dn"
 },
 {
   "title":"Cabin Fever",
   "trailer":"",
   "genre":"horror",
   "imgUri":"/thumbnails/horror/cabinFever.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:083453e43d413dfe6989febbc26fec8dda34c9b2&dn"
 },
 {
   "title":"Don't Breathe",
   "trailer":"",
   "genre":"horror",
   "imgUri":"/thumbnails/horror/DontBreathe.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:ea70483daed9b13d753df76b9997838fe23346aa&dn"
 },
 {
   "title":"Lights Out",
   "trailer":"",
   "genre":"horror",
   "imgUri":"/thumbnails/horror/LightsOut.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:2f213c264fe5bf0c3bfd58af4ac3798840fe267c&dn"
 },
 {
   "title":"Rosemary's Baby",
   "trailer":"",
   "genre":"horror",
   "imgUri":"/thumbnails/horror/RosemarysBaby.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:6aba37b9ddfc17d235527d512a87bc98b88045a0&dn"
 },
 {
   "title":"The Blair Witch Project",
   "trailer":"",
   "genre":"horror",
   "imgUri":"/thumbnails/horror/theBlairWitchProject.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:d137d0b698a077636066bbfba29a8f8a0d168a16&dn"
 },
 {
   "title":"The Boy",
   "trailer":"",
   "genre":"horror",
   "imgUri":"/thumbnails/horror/theBoy.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:7fd7d62a1ae385774b5b9f4e358ee4522c2f992a&dn"
 },
 {
   "title":"The Conjuring",
   "trailer":"",
   "genre":"horror",
   "imgUri":"/thumbnails/horror/TheConjuring.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:374a9448662b6d8073fe54933b52d9fc8e206b93&dn"
 },
 {
   "title":"The Conjuring 2",
   "trailer":"",
   "genre":"horror",
   "imgUri":"/thumbnails/horror/TheConjuring2.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:afed9326ddfb341c969ed662e8b2577d6d3360d2&dn"
 },
 {
   "title":"The Evil Dead",
   "trailer":"",
   "genre":"horror",
   "imgUri":"/thumbnails/horror/TheEvilDead.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:2296295180956ff54a86d53f9de8d062acc0210a&dn"
 },
 {
   "title":"The Exorcist",
   "trailer":"",
   "genre":"horror",
   "imgUri":"/thumbnails/horror/TheExorcist.jpeg",
-  "magnetUri":""
-},
-{
-  "title":"The Offering",
-  "trailer":"",
-  "genre":"horror",
-  "imgUri":"/thumbnails/horror/ThePurgeElectionYear.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:85704a25de6eb0ec338d05a7bfdf905033e1f914&dn"
 }
 ]
