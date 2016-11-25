@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "beb387436061816fc8c6"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "90ead6137f74742751fd"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -82833,7 +82833,10 @@
 	    if (data.status === 200) {
 	      $scope.mediaLoaded = true;
 	      $scope.config = {
-	        sources: [{ src: $sce.trustAsResourceUrl('/stream/' + infoHash + '.mp4'), type: "video/mp4" }],
+	        sources: [{ src: $sce.trustAsResourceUrl('/stream/' + infoHash + '.mp4'), type: "video/mp4" }
+	        // ,{src: $sce.trustAsResourceUrl('/stream/'+infoHash + '.webm'), type: "video/webm"},
+	        // {src: $sce.trustAsResourceUrl('/stream/'+infoHash + '.ogg'), type: "video/ogg"}
+	        ],
 	        autoPlay: true,
 	        plugins: {
 	          controls: {
