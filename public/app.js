@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d3e7be31f0bd28d91e12"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "beb387436061816fc8c6"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -82834,7 +82834,13 @@
 	      $scope.mediaLoaded = true;
 	      $scope.config = {
 	        sources: [{ src: $sce.trustAsResourceUrl('/stream/' + infoHash + '.mp4'), type: "video/mp4" }],
-	        autoPlay: true
+	        autoPlay: true,
+	        plugins: {
+	          controls: {
+	            autoHide: true,
+	            autoHideTime: 5000
+	          }
+	        }
 	      };
 	    }
 	  }).then(function (error) {
@@ -86877,7 +86883,7 @@
 /* 102 */
 /***/ function(module, exports) {
 
-	module.exports = "<div layout=\"column\" style=\"background-color:black;\">\n    <md-progress-linear ng-if=\"!mediaLoaded\"></md-progress-linear>\n    <videogular ng-if=\"mediaLoaded\" vg-auto-play=\"config.autoPlay\" style=\"height:675px; width:100%;\">\n\n        <vg-media vg-src=\"config.sources\">\n        </vg-media>\n\n        <vg-controls>\n            <vg-play-pause-button>\n                <md-tooltip>\n                    play\n                </md-tooltip>\n            </vg-play-pause-button>\n            <vg-time-display>{{ currentTime | date:'mm:ss':'+0000'}}</vg-time-display>\n            <vg-scrub-bar>\n                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>\n            </vg-scrub-bar>\n            <vg-time-display>{{ totalTime | date:'h:mm:ss':'UTC' }}</vg-time-display>\n            <vg-volume>\n                <vg-mute-button></vg-mute-button>\n                <vg-volume-bar></vg-volume-bar>\n            </vg-volume>\n            <vg-fullscreen-button></vg-fullscreen-button>\n        </vg-controls>\n\n        <vg-overlay-play></vg-overlay-play>\n    </videogular>\n</div>\n"
+	module.exports = "<div layout=\"column\" style=\"background-color:black;\">\n    <md-progress-linear ng-if=\"!mediaLoaded\"></md-progress-linear>\n    <videogular ng-if=\"mediaLoaded\" vg-auto-play=\"config.autoPlay\" style=\"height:675px; width:100%;\">\n\n        <vg-media vg-src=\"config.sources\">\n        </vg-media>\n\n        <vg-controls vg-autohide=\"config.plugins.controls.autoHide\" vg-autohide-time=\"config.plugins.controls.autoHideTime\">\n            <vg-play-pause-button>\n                <md-tooltip>\n                    play\n                </md-tooltip>\n            </vg-play-pause-button>\n            <vg-time-display>{{ currentTime | date:'mm:ss':'+0000'}}</vg-time-display>\n            <vg-scrub-bar>\n                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>\n            </vg-scrub-bar>\n            <vg-time-display>{{ totalTime | date:'h:mm:ss':'UTC' }}</vg-time-display>\n            <vg-volume>\n                <vg-mute-button></vg-mute-button>\n                <vg-volume-bar></vg-volume-bar>\n            </vg-volume>\n            <vg-fullscreen-button></vg-fullscreen-button>\n        </vg-controls>\n\n        <vg-overlay-play></vg-overlay-play>\n    </videogular>\n</div>\n"
 
 /***/ }
 /******/ ]);

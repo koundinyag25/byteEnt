@@ -9,10 +9,16 @@ function MovieController ($scope,$stateParams,$http,$sce){
     				sources: [
     					{src: $sce.trustAsResourceUrl('/stream/'+infoHash + '.mp4'), type: "video/mp4"}
             ],
-            autoPlay : true
-    			};
+            autoPlay : true,
+            plugins: {
+                    controls: {
+                        autoHide: true,
+                        autoHideTime: 5000
+                    }
+    			}
+        }
     }
-    
+
      }).then(function(error){
      console.log(error);
     });
