@@ -8,8 +8,6 @@ function MovieController ($scope,$stateParams,$http,$sce){
       $scope.config = {
     				sources: [
     					{src: $sce.trustAsResourceUrl('/stream/'+infoHash + '.mp4'), type: "video/mp4"}
-              ,{src: $sce.trustAsResourceUrl('/stream/'+infoHash + '.webm'), type: "video/webm"},
-						{src: $sce.trustAsResourceUrl('/stream/'+infoHash + '.ogg'), type: "video/ogg"}
             ],
             autoPlay : true,
             plugins: {
@@ -17,7 +15,8 @@ function MovieController ($scope,$stateParams,$http,$sce){
                         autoHide: true,
                         autoHideTime: 5000
                     }
-    			}
+    			},
+          responsive: true
         }
     }
 

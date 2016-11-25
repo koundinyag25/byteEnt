@@ -1,6 +1,6 @@
 <div layout="column" style="background-color:black;">
     <md-progress-linear ng-if="!mediaLoaded"></md-progress-linear>
-    <videogular ng-if="mediaLoaded" vg-auto-play="config.autoPlay" style="height:675px; width:100%;">
+    <videogular ng-if="mediaLoaded" vg-auto-play="config.autoPlay" vg-responsive="config.responsive" style="height:100%; width:100%;">
 
         <vg-media vg-src="config.sources">
         </vg-media>
