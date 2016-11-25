@@ -95,71 +95,9 @@ app.get('/stream/:infoHash.mp4', function (req, res, next) {
         } else {
             var start = 0;var end = total;
         }
-
+        console.log('you ass', file.name);
         var stream = file.createReadStream({ start: start, end: end });
-        res.writeHead(206, { 'Content-Range': 'bytes ' + start + '-' + end + '/' + total, 'Accept-Ranges': 'bytes', 'Content-Length': chunksize, 'Content-Type': 'video/mp4' });
-        stream.pipe(res);
-    } catch (err) {
-        res.status(500).send('Error: ' + err.toString());
-    }
-});
-
-app.get('/stream/:infoHash.webm', function (req, res, next) {
-    if (typeof req.params.infoHash == 'undefined' || req.params.infoHash == '') {
-        res.status(500).send('Missing infoHash parameter!');return;
-    }
-    var torrent = buildMagnetURI(req.params.infoHash);
-    try {
-        var torrent = client.get(torrent);
-        var file = getLargestFile(torrent);
-        var total = file.length;
-        console.log('total', total);
-        if (typeof req.headers.range != 'undefined') {
-            var range = req.headers.range;
-            var parts = range.replace(/bytes=/, "").split("-");
-            var partialstart = parts[0];
-            var partialend = parts[1];
-            var start = parseInt(partialstart, 10);
-            var end = partialend ? parseInt(partialend, 10) : total - 1;
-            var chunksize = end - start + 1;
-            console.log('start and end', chunksize);
-        } else {
-            var start = 0;var end = total;
-        }
-
-        var stream = file.createReadStream({ start: start, end: end });
-        res.writeHead(206, { 'Content-Range': 'bytes ' + start + '-' + end + '/' + total, 'Accept-Ranges': 'bytes', 'Content-Length': chunksize, 'Content-Type': 'video/mp4' });
-        stream.pipe(res);
-    } catch (err) {
-        res.status(500).send('Error: ' + err.toString());
-    }
-});
-
-app.get('/stream/:infoHash.ogg', function (req, res, next) {
-    if (typeof req.params.infoHash == 'undefined' || req.params.infoHash == '') {
-        res.status(500).send('Missing infoHash parameter!');return;
-    }
-    var torrent = buildMagnetURI(req.params.infoHash);
-    try {
-        var torrent = client.get(torrent);
-        var file = getLargestFile(torrent);
-        var total = file.length;
-        console.log('total', total);
-        if (typeof req.headers.range != 'undefined') {
-            var range = req.headers.range;
-            var parts = range.replace(/bytes=/, "").split("-");
-            var partialstart = parts[0];
-            var partialend = parts[1];
-            var start = parseInt(partialstart, 10);
-            var end = partialend ? parseInt(partialend, 10) : total - 1;
-            var chunksize = end - start + 1;
-            console.log('start and end', chunksize);
-        } else {
-            var start = 0;var end = total;
-        }
-
-        var stream = file.createReadStream({ start: start, end: end });
-        res.writeHead(206, { 'Content-Range': 'bytes ' + start + '-' + end + '/' + total, 'Accept-Ranges': 'bytes', 'Content-Length': chunksize, 'Content-Type': 'video/mp4' });
+        res.writeHead(206, { 'Content-Range': 'bytes ' + start + '-' + end + '/' + total, 'Accept-Ranges': 'bytes', 'Content-Length': chunksize, 'Content-Type': '' });
         stream.pipe(res);
     } catch (err) {
         res.status(500).send('Error: ' + err.toString());

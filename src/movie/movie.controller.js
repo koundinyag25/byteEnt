@@ -5,6 +5,7 @@ function MovieController ($scope,$stateParams,$http,$sce){
        console.log(data);
        if(data.status === 200){
          $scope.mediaLoaded = true;
+        //  $scope.src = $sce.trustAsResourceUrl('/stream/'+infoHash + '.mp4');
       $scope.config = {
     				sources: [
     					{src: $sce.trustAsResourceUrl('/stream/'+infoHash + '.mp4'), type: "video/mp4"}

@@ -80,7 +80,7 @@
 "trailer":"5AwUdTIbA8I",
 "genre":"action",
 "imgUri":"/thumbnails/action/sucideSquad.jpeg",
-"magnetUri":"?xt=urn:btih:FD6F216EB8DFBD2B612E53A3B54980A11CE9329A&dn"
+"magnetUri":""
 },{
 "title":"X-men apocolypse",
 "trailer":"COvnHv42T-A",
@@ -92,7 +92,7 @@
 "trailer":"ErjP5xMTc8I",
 "genre":"romantic",
 "imgUri":"/thumbnails/romantic/50FirstDates.jpeg",
-"magnetUri":""},
+"magnetUri":"?xt=urn:btih:1a5eb1a3368ae03ee61aa108a7f691a8698e4c67&dn"},
 {
 "title":"500 Days Of Summer",
 "trailer":"PsD0NpFSADM",
@@ -140,7 +140,7 @@
   "trailer":"RLoKtb4c4W0",
   "genre":"comedy",
   "imgUri":"/thumbnails/comedy/21JumpStreet.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:c80497de8157dc3417bc386a633361c2573e2552&dn"
 
 },
 {
@@ -148,15 +148,7 @@
   "trailer":"qP755JkDxyM",
   "genre":"comedy",
   "imgUri":"/thumbnails/comedy/22JumpStreet.jpeg",
-  "magnetUri":""
-
-},
-{
-  "title":"Bridesmaids",
-  "trailer":"FNppLrmdyug",
-  "genre":"comedy",
-  "imgUri":"/thumbnails/comedy/bridesmaids.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:c5652490cd27672acb22bf36b953a85a13574bd1&dn"
 
 },
 {
@@ -164,7 +156,7 @@
   "trailer":"1bQSOBJCPQE",
   "genre":"comedy",
   "imgUri":"/thumbnails/comedy/grudgeMatch.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:ae6fc6240abc32224f64833eecf11a11b7f6cae6&dn"
 
 },
 {
@@ -172,7 +164,7 @@
   "trailer":"ayTnvVpj9t4",
   "genre":"comedy",
   "imgUri":"/thumbnails/comedy/hotFuzz.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:62bcab593045baa9040c5f6878062c02aa104668&dn"
 
 },
 {
@@ -180,7 +172,7 @@
   "trailer":"LIfcaZ4pC-4",
   "genre":"comedy",
   "imgUri":"/thumbnails/comedy/shaunOfTheDead.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:3ac26be4ccce1b5a6283f8a3f247bd4ed09adeac&dn"
 
 },
 {
@@ -188,7 +180,7 @@
   "trailer":"eNBAQrxHIXo",
   "genre":"comedy",
   "imgUri":"/thumbnails/comedy/ted.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:d1c1a7ec4f83adeecc70d698ca27f4762f11f2f5&dn"
 
 },
 {
@@ -196,14 +188,14 @@
   "trailer":"Yma-g4gTwlE",
   "genre":"comedy",
   "imgUri":"/thumbnails/comedy/thisIsTheEnd.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:a58e766fc3f701587bbc883f8d52e47b12f5ff86&dn"
 
 },{
   "title":"Trainwreck",
   "trailer":"2MxnhBPoIx4",
   "genre":"comedy",
   "imgUri":"/thumbnails/comedy/trainwreck.jpeg",
-  "magnetUri":""
+  "magnetUri":"?xt=urn:btih:6fbf49b80c985afea98bfd4e40a33b1dcf0340a9&dn"
 
 },{
   "title":"The Worlds End",

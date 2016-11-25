@@ -116,6 +116,9 @@ body {
    cursor:pointer;
    z-index: -100;
 }
+.video-player {
+  object-fit: cover;
+}
 
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
