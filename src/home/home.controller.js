@@ -111,6 +111,7 @@ $scope.watchTrailer = function(trailer,genre){
      let elementArray = document.getElementsByTagName('iframe');
      angular.forEach(elementArray,(element)=>{
           if(genre === element.getAttribute('value')){
+            console.log(genre);
             var trailerUrl = "https://www.youtube.com/embed/" + trailer+ "?autoplay=1" ;
             element.setAttribute('src',trailerUrl);
           }
