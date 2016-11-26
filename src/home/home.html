@@ -75,7 +75,7 @@
             <div style="width:30%;" flex>
 
                 <md-card style="height:200px; background:black;">
-                    <iframe value="action" style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen></iframe>
+                    <iframe value="action" style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen volume=""></iframe>
 
                 </md-card>
             </div>
@@ -119,7 +119,7 @@
             </div>
             <div style="width:30%;" flex>
                 <md-card style="height:200px; background:black;">
-                    <iframe value="comedy" style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen></iframe>
+                    <iframe value="comedy" style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen volume=""></iframe>
 
                 </md-card>
             </div>
@@ -208,7 +208,7 @@
             <div style="width:30%;" flex>
 
                 <md-card style="height:200px; background:black;">
-                    <iframe style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen></iframe>
+                    <iframe style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen volume=""></iframe>
                 </md-card>
             </div>
         </div>
@@ -252,7 +252,7 @@
             </div>
             <div style="width:30%;" flex>
                 <md-card style="height:200px; background:black;">
-                    <iframe style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen></iframe>
+                    <iframe style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen volume=""></iframe>
                 </md-card>
             </div>
         </div>
@@ -276,11 +276,11 @@
                         </div>
                         <div layout="column" layout-padding>
                             <div layout="column" style="margin-top:14px;">
-                                <md-button ng-click="watchTrailer(item.trailer,item.genre)" class="md-fab" style="background-color:#9E9E9E">
+                                <md-button value={{item.genre}} ng-click="watchTrailer(item.trailer,item.genre)" class="md-fab" style="background-color:#9E9E9E">
                                     <md-tooltip>
                                         Watch trailer
                                     </md-tooltip>
-                                    <div value="gallery" style="height:40px; width:34px; background-image:url({{trailerBtnIcon}}); margin-left:4px;"></div>
+                                    <div value={{item.genre}} style="height:40px; width:34px; background-image:url({{trailerBtnIcon}}); margin-left:4px;"></div>
                                 </md-button>
                                 <md-button value="item.magnetUri" ng-click="play(item.magnetUri)" class="md-fab" style="background-color:#9E9E9E">
                                     <md-tooltip>
@@ -299,7 +299,7 @@
             </div>
             <div style="width:30%;" flex>
                 <md-card style="height:200px; background:black;">
-                    <iframe style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen></iframe>
+                    <iframe value="romantic" style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen volume="0"></iframe>
                 </md-card>
             </div>
         </div>
@@ -342,7 +342,7 @@
             </div>
             <div style="width:30%;" flex>
                 <md-card style="height:200px; background:black;">
-                    <iframe value="sci-fi" style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen></iframe>
+                    <iframe value="sci-fi" style="border-color: none;" height="200" frameborder="0" src="" allowfullscreen volume=""></iframe>
                 </md-card>
             </div>
         </div>

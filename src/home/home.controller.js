@@ -15,30 +15,84 @@ $scope.titles=[];
    $scope.previewImg = "/previewVid/preview.jpg";
    $scope.trailerBtnIcon = '/trailers/ic_tv_white_18dp_2x.png';
    $scope.playButtonIcon = '/trailers/play-button.png';
-   $scope.catTitle ='';
 
 $http.get('/trailers/trailer.json').then((thumbnailData)=>{
      angular.forEach(thumbnailData.data,(data)=>{
         if(data.genre === "romantic"){
-          self.catTitle = data.genre;
           $scope.romantic.push(data);
-          return $scope.catTitle;
+          let elementArray = document.getElementsByTagName('iframe');
+          angular.forEach(elementArray,(element)=>{
+               if(element.getAttribute('value') == 'romantic'){
+                 console.log('lol romantic',$scope.romantic[0].trailer);
+                 var trailerUrl = "https://www.youtube.com/embed/" + $scope.romantic[0].trailer ;
+                 element.setAttribute('src',trailerUrl)
+               }
+              });
+
         }else if(data.genre === "action"){
           $scope.action.push(data);
+          let elementArray = document.getElementsByTagName('iframe');
+          angular.forEach(elementArray,(element)=>{
+               if(element.getAttribute('value') == 'action'){
+                 var trailerUrl = "https://www.youtube.com/embed/" + $scope.action[0].trailer ;
+                 element.setAttribute('src',trailerUrl)
+               }
+              });
         }else if(data.genre === "comedy"){
           $scope.comedy.push(data);
+          let elementArray = document.getElementsByTagName('iframe');
+          angular.forEach(elementArray,(element)=>{
+               if(element.getAttribute('value') == 'comedy'){
+                 console.log('lol',$scope.action[0]);
+                 var trailerUrl = "https://www.youtube.com/embed/" + $scope.comedy[0].trailer ;
+                 element.setAttribute('src',trailerUrl)
+               }
+              });
         }else if(data.genre === "drama"){
           $scope.drama.push(data);
+          let elementArray = document.getElementsByTagName('iframe');
+          angular.forEach(elementArray,(element)=>{
+               if(element.getAttribute('value') == 'drama'){
+                 console.log('lol',$scope.action[0]);
+                 var trailerUrl = "https://www.youtube.com/embed/" + $scope.drama[0].trailer ;
+                 element.setAttribute('src',trailerUrl)
+               }
+              });
         }else if(data.genre === "fantasy"){
           $scope.fantasy.push(data);
+          let elementArray = document.getElementsByTagName('iframe');
+          angular.forEach(elementArray,(element)=>{
+               if(element.getAttribute('value') == 'fantasy'){
+                 console.log('lol',$scope.action[0]);
+                 var trailerUrl = "https://www.youtube.com/embed/" + $scope.fantasy[0].trailer ;
+                 element.setAttribute('src',trailerUrl)
+               }
+              });
         }else if(data.genre === "horror"){
           $scope.horror.push(data);
+          let elementArray = document.getElementsByTagName('iframe');
+          angular.forEach(elementArray,(element)=>{
+               if(element.getAttribute('value') == 'horror'){
+                 console.log('lol',$scope.action[0]);
+                 var trailerUrl = "https://www.youtube.com/embed/" + $scope.horror[0].trailer ;
+                 element.setAttribute('src',trailerUrl)
+               }
+              });
         }else if(data.genre === "sci-fi"){
           $scope.sciFi.push(data);
+          let elementArray = document.getElementsByTagName('iframe');
+          angular.forEach(elementArray,(element)=>{
+               if(element.getAttribute('value') == 'sci-fi'){
+                 console.log('lol',$scope.action[0]);
+                 var trailerUrl = "https://www.youtube.com/embed/" + $scope.sciFi[0].trailer;
+                 element.setAttribute('src',trailerUrl)
+               }
+              });
         }
      });
 
 }).then((error)=> error);
+
 
 if($stateParams.magnetUri != 'null'){
   console.log('hey this is stateParams',$stateParams.magnetUri);
@@ -51,19 +105,20 @@ if($stateParams.magnetUri != 'null'){
   // });
 }
 
+
+
 $scope.watchTrailer = function(trailer,genre){
      let elementArray = document.getElementsByTagName('iframe');
-
      angular.forEach(elementArray,(element)=>{
           if(genre === element.getAttribute('value')){
-            console.log(element.getAttribute('value'));
-            var trailerUrl = "https://www.youtube.com/embed/" + trailer + "?autoplay=1";
-            console.log(element);
+            var trailerUrl = "https://www.youtube.com/embed/" + trailer+ "?autoplay=1" ;
             element.setAttribute('src',trailerUrl);
-
           }
         });
      }
+
+
+
 
 
 $scope.play = (torrentName)=>{
@@ -82,6 +137,17 @@ $scope.play = (torrentName)=>{
  //    console.log(error);
  //  });
  }
+
+ function muteIframe (){
+    let elementArray = document.getElementsByTagName('iframe');
+    angular.forEach(elementArray,(element)=>{
+         let volume = 0;
+         element.setAttribute('volume',volume );
+        });
+  }
+  muteIframe();
+
+
 }
 
 
