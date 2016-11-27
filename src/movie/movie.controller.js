@@ -7,7 +7,15 @@ function MovieController ($scope,$stateParams,$http,$sce,$location,$timeout){
        console.log(data);
        if(data.status === 200){
          $scope.mediaLoaded = true;
+         $scope.$API = null;
         //  $scope.src = $sce.trustAsResourceUrl('/stream/'+infoHash + '.mp4');
+        $scope.onPlayerReady = ($API)=>{
+          $scope.$API = $API;
+          console.log('the API', $scope.$API);
+        }
+
+
+
       $scope.config = {
     				sources: [
     					{src: $sce.trustAsResourceUrl('/stream/'+infoHash + '.mp4'), type: "video/mp4"}
@@ -21,11 +29,14 @@ function MovieController ($scope,$stateParams,$http,$sce,$location,$timeout){
     			},
           responsive: true
         }
+
     }
 
      }).then(function(error){
      return error
     });
+
+
     //
     $scope.goBackToBrowse = function(){
 
@@ -41,15 +52,24 @@ function MovieController ($scope,$stateParams,$http,$sce,$location,$timeout){
     }
 
 
-    $scope.showBackButton = ()=>{
-      $scope.hide = false;
+    $scope.showBackButton = ($API)=>{
+      if($scope.$API.currentState === "play"){
+        $scope.hide = true;
+      }else if($scope.$API.currentState === "pause" ){
+        $scope.hide = false;
+      }
+      // $timeout($scope.hide = true, 15000);
     }
 
-    $scope.hideBackButton = ()=>{
-      $timeout(()=>{
-        $scope.hide = true;
-      },5000);
+    $scope.show =()=>{
+      $scope.hide = false;
     }
+    $scope.hideBtn = ()=>{
+      $timeout(()=>{
+        $scope.hide = true
+      }, 5000);
+    }
+
 
 }
 

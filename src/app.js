@@ -15,9 +15,10 @@ import 'videogular-overlay-play';
 
 
 let app = angular.module('myApp',['ui.router','ngMaterial','ngScrollable','ngSanitize',
-			"com.2fdevs.videogular",
-			"com.2fdevs.videogular.plugins.controls",
-			"com.2fdevs.videogular.plugins.overlayplay"
+			'com.2fdevs.videogular',
+			'com.2fdevs.videogular.plugins.controls',
+			'com.2fdevs.videogular.plugins.overlayplay',
+			'com.2fdevs.videogular.plugins.buffering'
 			]);
 
 app.config(($stateProvider,$urlRouterProvider,$locationProvider)=>{

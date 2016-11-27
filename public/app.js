@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ceb3ab91434f3c6df128"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "0d462cb444c61b319503"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -40898,7 +40898,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var app = _angular2.default.module('myApp', ['ui.router', 'ngMaterial', 'ngScrollable', 'ngSanitize', "com.2fdevs.videogular", "com.2fdevs.videogular.plugins.controls", "com.2fdevs.videogular.plugins.overlayplay"]);
+	var app = _angular2.default.module('myApp', ['ui.router', 'ngMaterial', 'ngScrollable', 'ngSanitize', 'com.2fdevs.videogular', 'com.2fdevs.videogular.plugins.controls', 'com.2fdevs.videogular.plugins.overlayplay', 'com.2fdevs.videogular.plugins.buffering']);
 
 	app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 	  $stateProvider.state('home', {
@@ -83490,7 +83490,13 @@
 	    console.log(data);
 	    if (data.status === 200) {
 	      $scope.mediaLoaded = true;
+	      $scope.$API = null;
 	      //  $scope.src = $sce.trustAsResourceUrl('/stream/'+infoHash + '.mp4');
+	      $scope.onPlayerReady = function ($API) {
+	        $scope.$API = $API;
+	        console.log('the API', $scope.$API);
+	      };
+
 	      $scope.config = {
 	        sources: [{ src: $sce.trustAsResourceUrl('/stream/' + infoHash + '.mp4'), type: "video/mp4" }],
 	        autoPlay: true,
@@ -83506,6 +83512,7 @@
 	  }).then(function (error) {
 	    return error;
 	  });
+
 	  //
 	  $scope.goBackToBrowse = function () {
 
@@ -83520,11 +83527,19 @@
 	    });
 	  };
 
-	  $scope.showBackButton = function () {
-	    $scope.hide = false;
+	  $scope.showBackButton = function ($API) {
+	    if ($scope.$API.currentState === "play") {
+	      $scope.hide = true;
+	    } else if ($scope.$API.currentState === "pause") {
+	      $scope.hide = false;
+	    }
+	    // $timeout($scope.hide = true, 15000);
 	  };
 
-	  $scope.hideBackButton = function () {
+	  $scope.show = function () {
+	    $scope.hide = false;
+	  };
+	  $scope.hideBtn = function () {
 	    $timeout(function () {
 	      $scope.hide = true;
 	    }, 5000);
@@ -87559,7 +87574,7 @@
 /* 102 */
 /***/ function(module, exports) {
 
-	module.exports = "<div id=\"video-wrapper\" layout=\"column\" style=\"background-color:black;\">\n    <md-progress-linear ng-if=\"!mediaLoaded\"></md-progress-linear>\n    <!-- <video src=\"{{src}}\" autoplay controls type=\"vide/avi\" class=\"video-player\"></video> -->\n    <div style=\"height:100px; background:transparent;\">\n        <md-button ng-hide=\"hide\" ng-click=\"goBackToBrowse()\" class=\"md-fab\" style=\"z-index:10; margin-top:10px; margin-left:50px; background-color:grey\">\n            <md-tooltip>\n                back to browse\n            </md-tooltip>\n            <div style=\"height:40px; width:34px; background-image:url('/trailers/ic_arrow_back_white_18dp_2x.png'); margin-left:4px;\"></div>\n        </md-button>\n    </div>\n\n    <div id=\"player\" style=\"margin-top: -70px;\">\n\n        <videogular ng-if=\"mediaLoaded\" vg-auto-play=\"config.autoPlay\" vg-responsive=\"config.responsive\" style=\"height:100%; width:100%;\">\n\n            <vg-media vg-src=\"config.sources\">\n            </vg-media>\n\n            <vg-controls ng-mouseenter=\"showBackButton()\" ng-mouseleave=\"hideBackButton()\" vg-autohide=\"config.plugins.controls.autoHide\" vg-autohide-time=\"config.plugins.controls.autoHideTime\">\n                <vg-play-pause-button>\n                    <md-tooltip>\n                        play\n                    </md-tooltip>\n                </vg-play-pause-button>\n                <vg-time-display>{{ currentTime | date:'mm:ss':'+0000'}}</vg-time-display>\n                <vg-scrub-bar>\n                    <vg-scrub-bar-current-time></vg-scrub-bar-current-time>\n                </vg-scrub-bar>\n                <vg-time-display>{{ totalTime | date:'h:mm:ss':'UTC' }}</vg-time-display>\n                <vg-volume>\n                    <vg-mute-button></vg-mute-button>\n                    <vg-volume-bar></vg-volume-bar>\n                </vg-volume>\n                <vg-fullscreen-button></vg-fullscreen-button>\n            </vg-controls>\n\n            <vg-overlay-play></vg-overlay-play>\n        </videogular>\n    </div>\n\n</div>\n>\n"
+	module.exports = "<div id=\"video-wrapper\" layout=\"column\" style=\"background-color:black;\">\n    <md-progress-linear ng-if=\"!mediaLoaded\"></md-progress-linear>\n    <!-- <video src=\"{{src}}\" autoplay controls type=\"vide/avi\" class=\"video-player\"></video> -->\n    <div ng-if=\"mediaLoaded\" style=\"height:100px; background:transparent;\">\n        <md-button ng-hide=\"hide\" ng-click=\"goBackToBrowse()\" class=\"md-fab\" style=\"z-index:10; margin-top:10px; margin-left:50px; background-color:grey\">\n            <md-tooltip>\n                back to browse\n            </md-tooltip>\n            <div style=\"height:40px; width:34px; background-image:url('/trailers/ic_arrow_back_white_18dp_2x.png'); margin-left:4px;\"></div>\n        </md-button>\n    </div>\n\n    <div id=\"player\" style=\"margin-top: -70px;\">\n        <videogular ng-click=\"showBackButton()\" vg-player-ready=\"onPlayerReady($API)\" ng-if=\"mediaLoaded\" vg-auto-play=\"config.autoPlay\" vg-responsive=\"config.responsive\" style=\"height:100%; width:100%;\">\n\n            <vg-media vg-src=\"config.sources\"></vg-media>\n\n            <vg-controls ng-mouseenter=\"show()\" ng-mouseleave=\"hideBtn()\" vg-autohide=\"config.plugins.controls.autoHide\" vg-autohide-time=\"config.plugins.controls.autoHideTime\">\n                <vg-play-pause-button>\n                    <md-tooltip>\n                        play\n                    </md-tooltip>\n                </vg-play-pause-button>\n                <vg-time-display>{{ currentTime | date:'mm:ss':'+0000'}}</vg-time-display>\n                <vg-scrub-bar>\n                    <vg-scrub-bar-current-time></vg-scrub-bar-current-time>\n                </vg-scrub-bar>\n                <vg-time-display>{{ totalTime | date:'h:mm:ss':'UTC' }}</vg-time-display>\n                <vg-volume>\n                    <vg-mute-button></vg-mute-button>\n                    <vg-volume-bar></vg-volume-bar>\n                </vg-volume>\n                <vg-fullscreen-button></vg-fullscreen-button>\n            </vg-controls>\n\n            <vg-overlay-play></vg-overlay-play>\n            <vg-buffering></vg-buffering>\n        </videogular>\n    </div>\n\n</div>\n> /div>\n\n</div>\n> /div>\n\n</div>\n>\n"
 
 /***/ }
 /******/ ]);
