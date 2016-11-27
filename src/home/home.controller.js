@@ -23,7 +23,7 @@ $http.get('/trailers/trailer.json').then((thumbnailData)=>{
           let elementArray = document.getElementsByTagName('iframe');
           angular.forEach(elementArray,(element)=>{
                if(element.getAttribute('value') == 'romantic'){
-                 console.log('lol romantic',$scope.romantic[0].trailer);
+
                  var trailerUrl = "https://www.youtube.com/embed/" + $scope.romantic[0].trailer ;
                  element.setAttribute('src',trailerUrl)
                }
@@ -43,7 +43,6 @@ $http.get('/trailers/trailer.json').then((thumbnailData)=>{
           let elementArray = document.getElementsByTagName('iframe');
           angular.forEach(elementArray,(element)=>{
                if(element.getAttribute('value') == 'comedy'){
-                 console.log('lol',$scope.action[0]);
                  var trailerUrl = "https://www.youtube.com/embed/" + $scope.comedy[0].trailer ;
                  element.setAttribute('src',trailerUrl)
                }
@@ -53,7 +52,7 @@ $http.get('/trailers/trailer.json').then((thumbnailData)=>{
           let elementArray = document.getElementsByTagName('iframe');
           angular.forEach(elementArray,(element)=>{
                if(element.getAttribute('value') == 'drama'){
-                 console.log('lol',$scope.action[0]);
+
                  var trailerUrl = "https://www.youtube.com/embed/" + $scope.drama[0].trailer ;
                  element.setAttribute('src',trailerUrl)
                }
@@ -63,7 +62,7 @@ $http.get('/trailers/trailer.json').then((thumbnailData)=>{
           let elementArray = document.getElementsByTagName('iframe');
           angular.forEach(elementArray,(element)=>{
                if(element.getAttribute('value') == 'fantasy'){
-                 console.log('lol',$scope.action[0]);
+
                  var trailerUrl = "https://www.youtube.com/embed/" + $scope.fantasy[0].trailer ;
                  element.setAttribute('src',trailerUrl)
                }
@@ -73,7 +72,6 @@ $http.get('/trailers/trailer.json').then((thumbnailData)=>{
           let elementArray = document.getElementsByTagName('iframe');
           angular.forEach(elementArray,(element)=>{
                if(element.getAttribute('value') == 'horror'){
-                 console.log('lol',$scope.action[0]);
                  var trailerUrl = "https://www.youtube.com/embed/" + $scope.horror[0].trailer ;
                  element.setAttribute('src',trailerUrl)
                }
@@ -83,7 +81,6 @@ $http.get('/trailers/trailer.json').then((thumbnailData)=>{
           let elementArray = document.getElementsByTagName('iframe');
           angular.forEach(elementArray,(element)=>{
                if(element.getAttribute('value') == 'sci-fi'){
-                 console.log('lol',$scope.action[0]);
                  var trailerUrl = "https://www.youtube.com/embed/" + $scope.sciFi[0].trailer;
                  element.setAttribute('src',trailerUrl)
                }
@@ -94,24 +91,11 @@ $http.get('/trailers/trailer.json').then((thumbnailData)=>{
 }).then((error)=> error);
 
 
-if($stateParams.magnetUri != 'null'){
-  console.log('hey this is stateParams',$stateParams.magnetUri);
-  var infoHash = torrentName.split('btih:')[1].split('&')[0];
-  console.log(infoHash);
-  // $http.post('/api/delete/'+ infoHash).success(()=>{
-  //   console.log('backTobrowse is sucessgul');
-  // }).catch((error)=>{
-  //  console.error('the error',error);
-  // });
-}
-
-
 
 $scope.watchTrailer = function(trailer,genre){
      let elementArray = document.getElementsByTagName('iframe');
      angular.forEach(elementArray,(element)=>{
           if(genre === element.getAttribute('value')){
-            console.log(genre);
             var trailerUrl = "https://www.youtube.com/embed/" + trailer+ "?autoplay=1" ;
             element.setAttribute('src',trailerUrl);
           }
@@ -123,32 +107,11 @@ $scope.watchTrailer = function(trailer,genre){
 
 
 $scope.play = (torrentName)=>{
-  console.log(torrentName);
   $stateParams = {
     magnetUri: torrentName
+    }
+    $location.path('/movie/'+$stateParams.magnetUri);
   }
-
-  console.log($stateParams);
- $location.path('/movie/'+$stateParams.magnetUri);
- // var infoHash = torrentName.split('btih:')[1].split('&')[0];
- // $http.get('/api/add/'+infoHash).then(function(data){
- //    $scope.video = $sce.trustAsResourceUrl('/stream/'+infoHash + '.mp4');
- //    console.log($scope.video);
- //    }).then(function(error){
- //    console.log(error);
- //  });
- }
-
- function muteIframe (){
-    let elementArray = document.getElementsByTagName('iframe');
-    angular.forEach(elementArray,(element)=>{
-         let volume = 0;
-         element.setAttribute('volume',volume );
-        });
-  }
-  muteIframe();
-
-
 }
 
 

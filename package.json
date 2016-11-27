@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
-    "prestart": "babel server --out-dir serverDist",
+    "prestart": "babel server --out-dir serverDist && npm run build",
     "dev": "nodemon --exec babel-node server/index.js",
     "build": "webpack --progress --colors --config webpack.config.js",
     "start": "node serverDist/index.js"

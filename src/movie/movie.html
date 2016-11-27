@@ -1,13 +1,23 @@
 <div id="video-wrapper" layout="column" style="background-color:black;">
     <md-progress-linear ng-if="!mediaLoaded"></md-progress-linear>
     <!-- <video src="{{src}}" autoplay controls type="vide/avi" class="video-player"></video> -->
-    <div id="player">
+    <div style="height:100px; background:transparent;">
+        <md-button ng-hide="hide" ng-click="goBackToBrowse()" class="md-fab" style="z-index:10; margin-top:10px; margin-left:50px; background-color:grey">
+            <md-tooltip>
+                back to browse
+            </md-tooltip>
+            <div style="height:40px; width:34px; background-image:url('/trailers/ic_arrow_back_white_18dp_2x.png'); margin-left:4px;"></div>
+        </md-button>
+    </div>
+
+    <div id="player" style="margin-top: -70px;">
+
         <videogular ng-if="mediaLoaded" vg-auto-play="config.autoPlay" vg-responsive="config.responsive" style="height:100%; width:100%;">
 
             <vg-media vg-src="config.sources">
             </vg-media>
 
-            <vg-controls vg-autohide="config.plugins.controls.autoHide" vg-autohide-time="config.plugins.controls.autoHideTime">
+            <vg-controls ng-mouseenter="showBackButton()" ng-mouseleave="hideBackButton()" vg-autohide="config.plugins.controls.autoHide" vg-autohide-time="config.plugins.controls.autoHideTime">
                 <vg-play-pause-button>
                     <md-tooltip>
                         play
@@ -30,3 +40,4 @@
     </div>
 
 </div>
+>

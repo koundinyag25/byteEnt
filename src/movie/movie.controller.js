@@ -1,4 +1,6 @@
-function MovieController ($scope,$stateParams,$http,$sce){
+function MovieController ($scope,$stateParams,$http,$sce,$location,$timeout){
+  // $scope.goBackToBrowseButton = '/trailers/ic_arrow_back_white_18dp_2x.png';
+      $scope.hide = true;
      $scope.mediaLoaded = false;
      var infoHash = $stateParams.magnetUri.split('btih:')[1].split('&')[0];
      $http.get('/api/add/'+infoHash).then(function(data){
@@ -22,17 +24,33 @@ function MovieController ($scope,$stateParams,$http,$sce){
     }
 
      }).then(function(error){
-     console.log(error);
+     return error
     });
     //
-    // $scope.backTobrowse = function(infoHash){
-    //   $location.path('/');
-      // $http.post('/api/delete/'+ infoHash).success(()=>{
-      //   console.log('backTobrowse is sucessgul');
-      // }).catch((error)=>{
-      //  console.error('the error',error);
-      // });
-    // }
+    $scope.goBackToBrowse = function(){
+
+      $http.get('/api/delete/'+ infoHash).success((data)=>{
+         console.log('delete is successful',data);
+         if(data.status === 200){
+            $location.path('/');
+         }
+        return;
+      }).catch((error)=>{
+       console.error('the error',error);
+      });
+    }
+
+
+    $scope.showBackButton = ()=>{
+      $scope.hide = false;
+    }
+
+    $scope.hideBackButton = ()=>{
+      $timeout(()=>{
+        $scope.hide = true;
+      },5000);
+    }
+
 }
 
 
