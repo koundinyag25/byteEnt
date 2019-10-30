@@ -51,6 +51,6 @@
     "videogular-themes-default": "^1.4.4",
     "webpack": "^1.15.0",
     "webpack-dev-server": "^1.16.2",
-    "webtorrent": "^0.98.0"
+    "webtorrent": "^0.107.16"
   }
 }
